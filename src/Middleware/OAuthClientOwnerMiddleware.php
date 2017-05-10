@@ -3,36 +3,36 @@
 /*
  * This file is part of OAuth 2.0 Laravel.
  *
- * (c) Luca Degasperi <packages@lucadegasperi.com>
+ * (c) Ahmet Oğuz Koruyucu <aokoruyucu@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace LucaDegasperi\OAuth2Server\Middleware;
+namespace aokoruyucu\OAuth2Server\Middleware;
 
 use Closure;
 use League\OAuth2\Server\Exception\AccessDeniedException;
-use LucaDegasperi\OAuth2Server\Authorizer;
+use aokoruyucu\OAuth2Server\Authorizer;
 
 /**
  * This is the oauth client middleware class.
  *
- * @author Vincent Klaiber <hello@vinkla.com>
+ * @author Ahmet Oğuz Koruyucu <aokoruyucu@gmai.com>
  */
 class OAuthClientOwnerMiddleware
 {
     /**
      * The Authorizer instance.
      *
-     * @var \LucaDegasperi\OAuth2Server\Authorizer
+     * @var \aokoruyucu\OAuth2Server\Authorizer
      */
     protected $authorizer;
 
     /**
      * Create a new oauth client middleware instance.
      *
-     * @param \LucaDegasperi\OAuth2Server\Authorizer $authorizer
+     * @param \aokoruyucu\OAuth2Server\Authorizer $authorizer
      */
     public function __construct(Authorizer $authorizer)
     {

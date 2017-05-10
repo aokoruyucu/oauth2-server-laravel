@@ -3,17 +3,17 @@
 /*
  * This file is part of OAuth 2.0 Laravel.
  *
- * (c) Luca Degasperi <packages@lucadegasperi.com>
+ * (c) Ahmet Oğuz Koruyucu <aokoruyucu@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace unit\LucaDegasperi\OAuth2Server\Middleware;
+namespace unit\aokoruyucu\OAuth2Server\Middleware;
 
 use Illuminate\Http\Request;
 use League\OAuth2\Server\Exception\InvalidRequestException;
-use LucaDegasperi\OAuth2Server\Authorizer;
+use aokoruyucu\OAuth2Server\Authorizer;
 use PhpSpec\ObjectBehavior;
 
 class CheckAuthCodeRequestMiddlewareSpec extends ObjectBehavior
@@ -34,7 +34,7 @@ class CheckAuthCodeRequestMiddlewareSpec extends ObjectBehavior
 
     public function it_is_initializable()
     {
-        $this->shouldHaveType('LucaDegasperi\OAuth2Server\Middleware\CheckAuthCodeRequestMiddleware');
+        $this->shouldHaveType('aokoruyucu\OAuth2Server\Middleware\CheckAuthCodeRequestMiddleware');
     }
 
     public function it_calls_the_next_middleware_on_success(Request $request, Authorizer $authorizer)

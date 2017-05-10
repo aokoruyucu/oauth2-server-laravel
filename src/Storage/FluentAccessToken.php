@@ -3,13 +3,13 @@
 /*
  * This file is part of OAuth 2.0 Laravel.
  *
- * (c) Luca Degasperi <packages@lucadegasperi.com>
+ * (c) Ahmet Oğuz Koruyucu <aokoruyucu@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace LucaDegasperi\OAuth2Server\Storage;
+namespace aokoruyucu\OAuth2Server\Storage;
 
 use Carbon\Carbon;
 use League\OAuth2\Server\Entity\AccessTokenEntity;
@@ -19,7 +19,7 @@ use League\OAuth2\Server\Storage\AccessTokenInterface;
 /**
  * This is the fluent access token class.
  *
- * @author Luca Degasperi <packages@lucadegasperi.com>
+ * @author Ahmet Oğuz Koruyucu <aokoruyucu@gmail.com>
  */
 class FluentAccessToken extends AbstractFluentAdapter implements AccessTokenInterface
 {

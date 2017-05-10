@@ -3,34 +3,34 @@
 Composer is the recommended way to install this package. Add the following line to your `composer.json` file:
 
 ```json
-"lucadegasperi/oauth2-server-laravel": "5.1.*"
+"aokoruyucu/oauth2-server-laravel": "5.1.*"
 ```
 
 Then run `composer update` to get the package.
 
 Once composer has installed the package add this line of code to the `providers` array located in your `config/app.php` file:
 ```php
-LucaDegasperi\OAuth2Server\Storage\FluentStorageServiceProvider::class,
-LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider::class,
+aokoruyucu\OAuth2Server\Storage\FluentStorageServiceProvider::class,
+aokoruyucu\OAuth2Server\OAuth2ServerServiceProvider::class,
 ```
 
 Add this line to the `aliases` array:
 ```php
-'Authorizer' => LucaDegasperi\OAuth2Server\Facades\Authorizer::class,
+'Authorizer' => aokoruyucu\OAuth2Server\Facades\Authorizer::class,
 ```
 
 Add the following line to your `app/Http/Kernel.php` file in the `$middleware` array
 ```php
-\LucaDegasperi\OAuth2Server\Middleware\OAuthExceptionHandlerMiddleware::class,
+\aokoruyucu\OAuth2Server\Middleware\OAuthExceptionHandlerMiddleware::class,
 ```
 This will catch any OAuth error and respond appropriately.
 
 Then add
 ```php
-'oauth' => \LucaDegasperi\OAuth2Server\Middleware\OAuthMiddleware::class,
-'oauth-user' => \LucaDegasperi\OAuth2Server\Middleware\OAuthUserOwnerMiddleware::class,
-'oauth-client' => \LucaDegasperi\OAuth2Server\Middleware\OAuthClientOwnerMiddleware::class,
-'check-authorization-params' => \LucaDegasperi\OAuth2Server\Middleware\CheckAuthCodeRequestMiddleware::class,
+'oauth' => \aokoruyucu\OAuth2Server\Middleware\OAuthMiddleware::class,
+'oauth-user' => \aokoruyucu\OAuth2Server\Middleware\OAuthUserOwnerMiddleware::class,
+'oauth-client' => \aokoruyucu\OAuth2Server\Middleware\OAuthClientOwnerMiddleware::class,
+'check-authorization-params' => \aokoruyucu\OAuth2Server\Middleware\CheckAuthCodeRequestMiddleware::class,
 ```
 to the `$routeMiddleware` array.
 

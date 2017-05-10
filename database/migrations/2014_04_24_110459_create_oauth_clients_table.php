@@ -3,7 +3,7 @@
 /*
  * This file is part of OAuth 2.0 Laravel.
  *
- * (c) Luca Degasperi <packages@lucadegasperi.com>
+ * (c) Ahmet Oğuz Koruyucu <aokoruyucu@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Schema;
 /**
  * This is the create oauth client table migration class.
  *
- * @author Luca Degasperi <packages@lucadegasperi.com>
+ * @author Ahmet Oğuz Koruyucu <aokoruyucu@gmail.com>
  */
 class CreateOauthClientsTable extends Migration
 {
@@ -31,9 +31,11 @@ class CreateOauthClientsTable extends Migration
             $table->string('id', 40)->primary();
             $table->string('secret', 40);
             $table->string('name');
+            $table->string('domain');
+            $table->tinyInteger('is_active')->default(1);
             $table->timestamps();
-
-            $table->unique(['id', 'secret']);
+            $table->unique();
+            $table->unique(['id', 'secret','domain']);
         });
     }
 

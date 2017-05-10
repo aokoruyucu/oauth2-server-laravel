@@ -3,13 +3,13 @@
 /*
  * This file is part of OAuth 2.0 Laravel.
  *
- * (c) Luca Degasperi <packages@lucadegasperi.com>
+ * (c) Ahmet Oğuz Koruyucu <aokoruyucu@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace LucaDegasperi\OAuth2Server\Tests\Database\Seeders;
+namespace aokoruyucu\OAuth2Server\Tests\Database\Seeders;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
@@ -25,7 +25,7 @@ class OAuth2DatabaseSeeder extends Seeder
     public function run()
     {
         if (App::environment() === 'production') {
-            exit('I just stopped you getting fired. Love Luca');
+            exit('I just stopped you getting fired. Love Ahmet Oğuz');
         }
 
         Model::unguard();

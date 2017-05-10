@@ -3,29 +3,29 @@
 /*
  * This file is part of OAuth 2.0 Laravel.
  *
- * (c) Luca Degasperi <packages@lucadegasperi.com>
+ * (c) Ahmet Oğuz Koruyucu <aokoruyucu@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace LucaDegasperi\OAuth2Server\Middleware;
+namespace aokoruyucu\OAuth2Server\Middleware;
 
 use Closure;
 use League\OAuth2\Server\Exception\InvalidScopeException;
-use LucaDegasperi\OAuth2Server\Authorizer;
+use aokoruyucu\OAuth2Server\Authorizer;
 
 /**
  * This is the oauth middleware class.
  *
- * @author Luca Degasperi <packages@lucadegasperi.com>
+ * @author Ahmet Oğuz Koruyucu <aokoruyucu@gmail.com>
  */
 class OAuthMiddleware
 {
     /**
      * The Authorizer instance.
      *
-     * @var \LucaDegasperi\OAuth2Server\Authorizer
+     * @var \aokoruyucu\OAuth2Server\Authorizer
      */
     protected $authorizer;
 
@@ -39,7 +39,7 @@ class OAuthMiddleware
     /**
      * Create a new oauth middleware instance.
      *
-     * @param \LucaDegasperi\OAuth2Server\Authorizer $authorizer
+     * @param \aokoruyucu\OAuth2Server\Authorizer $authorizer
      * @param bool $httpHeadersOnly
      */
     public function __construct(Authorizer $authorizer, $httpHeadersOnly = false)

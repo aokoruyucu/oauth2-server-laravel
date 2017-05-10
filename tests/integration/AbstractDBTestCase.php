@@ -3,13 +3,13 @@
 /*
  * This file is part of OAuth 2.0 Laravel.
  *
- * (c) Luca Degasperi <packages@lucadegasperi.com>
+ * (c) Ahmet Oğuz Koruyucu <aokoruyucu@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-use LucaDegasperi\OAuth2Server\Tests\Database\Seeders\OAuth2DatabaseSeeder;
+use aokoruyucu\OAuth2Server\Tests\Database\Seeders\OAuth2DatabaseSeeder;
 
 abstract class AbstractDBTestCase extends AbstractTestCase
 {

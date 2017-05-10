@@ -1,16 +1,12 @@
 {
-    "name": "lucadegasperi/oauth2-server-laravel",
+    "name": "aokoruyucu/oauth2-server-laravel",
     "description": "An OAuth 2.0 bridge for Laravel and Lumen",
     "keywords": ["oauth2", "oauth", "server", "api", "laravel", "lumen"],
-    "license": "MIT",
+    "license": "Baracca",
     "authors": [
         {
-            "name": "Luca Degasperi",
-            "email": "packages@lucadegasperi.com"
-        },
-        {
-            "name": "Vincent Klaiber",
-            "email": "hello@vinkla.com"
+            "name": "Ahmet Oğuz Koruyucu",
+            "email": "aokoruyucu@gmail.com"
         }
     ],
     "require": {
@@ -32,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "LucaDegasperi\\OAuth2Server\\": "src"
+            "aokoruyucu\\OAuth2Server\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "LucaDegasperi\\OAuth2Server\\Tests\\": "tests"
+            "aokoruyucu\\OAuth2Server\\Tests\\": "tests"
         },
         "classmap": [
             "database"

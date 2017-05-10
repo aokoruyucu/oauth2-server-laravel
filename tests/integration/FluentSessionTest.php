@@ -3,13 +3,13 @@
 /*
  * This file is part of OAuth 2.0 Laravel.
  *
- * (c) Luca Degasperi <packages@lucadegasperi.com>
+ * (c) Ahmet Oğuz Koruyucu <aokoruyucu@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-use LucaDegasperi\OAuth2Server\Storage\FluentSession;
+use aokoruyucu\OAuth2Server\Storage\FluentSession;
 use Mockery as m;
 
 class FluentSessionTest extends AbstractDBTestCase
